@@ -1,0 +1,126 @@
+/*CONATINERS..........................*/
+.container {
+	padding: 20px 0 40px 0;
+}
+
+/*HEADER..........................*/
+header {
+	background: url("../_images/header-bg.jpeg") no-repeat fixed 0px 0px;
+	background-size: cover;
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+}
+
+header h2, header h3, header h4, header a {
+	color: white;
+	text-shadow: 0px 2px  5px black;
+}
+
+header .container-fluid {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+#name-heading {
+	font-size: 3em;
+	padding-top: 130px;
+	padding-bottom: 0;
+}
+
+header h3 {
+	font-size: 3em;
+}
+
+#h4-padding {
+	padding-bottom: 150px;
+	font-size: 1em;
+}
+
+/*NAV..........................*/
+nav {
+	text-align: right;
+	margin: 0 auto;
+	padding-top: 25px;
+}
+
+nav a {
+	padding-left: 50px;
+	font-size: 1.2em;
+}
+
+nav a:hover {
+	color: red;
+	text-decoration: none;
+}
+
+/*PROJECTS..........................*/
+.projects {
+
+}
+
+/*ABOUT ME..........................*/
+.about-bgColor {
+	background-color: #F7F7F7;
+}
+
+.about-me {
+	
+}
+
+.about-me img {
+	border-radius: 50%;
+	border: solid 5px #1A5163;
+	display: block;
+	margin: 0 auto;
+}
+
+.about-me p {
+	padding: 10px;
+}
+
+/*CONTACT..........................*/
+.contact-bgColor {
+	background-color: #1A5163;
+}
+
+.contact {
+	color: white;
+}
+
+
+
+/*HEADINGS..........................*/
+h2 {
+	padding-bottom: 10px;
+}
+
+/*IMAGES..........................*/
+#projects img {
+	width: 100%;
+}
+
+/*MISC..........................*/
+hr {
+	width: 40%;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));
+}
+
+
+
+
+ul {
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+}
+
+li {
+	display: inline-block;
+	font-size: 3em;
+	padding: 0 50px;
+}
+
+ul li {
+	list-style: none;
+}
