@@ -63,19 +63,19 @@ nav a:hover {
 	background-color: #F7F7F7;
 }
 
-.about-me {
+.about {
 	
 }
 
-.about-me img {
+.about img {
 	border-radius: 50%;
 	border: solid 5px #1A5163;
 	display: block;
 	margin: 0 auto;
 }
 
-.about-me p {
-	padding: 5px 10px;
+.about p {
+	padding: 0 10px;
 }
 
 /*CONTACT..........................*/
@@ -95,7 +95,7 @@ h2 {
 }
 
 /*IMAGES..........................*/
-#projects img {
+.projects img {
 	width: 100%;
 }
 
@@ -115,10 +115,23 @@ ul {
 	padding: 0;
 }
 
+.icons {
+	font-size: 3em;
+}
+
 li {
 	display: inline-block;
-	font-size: 3em;
-	padding: 0 50px;
+	padding: 5px 50px;
+	font-weight: bold;
+}
+
+.liText {
+	font-size: 2em;
+}
+
+.contactText {
+	font-size: 1.5em;
+	display: block;
 }
 
 ul li {

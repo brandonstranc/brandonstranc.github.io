@@ -31,9 +31,9 @@
 	<div class="container-fluid">
 		<div class="container">
 			<nav>
-				<a href="#projects" class="text-center" title="">Projects</a>
-				<a href="#about-me" class="text-center" title="">About Me</a>
-				<a href="#contact" class="text-center" title="">Contact</a>
+				<a href="#projects" class="text-center scrollTo" title="">Projects</a>
+				<a href="#about" class="text-center scrollTo" title="">About Me</a>
+				<a href="#contact" class="text-center scrollTo" title="">Contact</a>
 			</nav>
 
 			<h2 id="name-heading" class="text-center fade-in">Brandon Stranc</h2>
@@ -48,8 +48,8 @@
 <!-- PROJECTS..................................... -->
 <div class="container-fluid">
 	<div class="container projects">
-		<h2 class="text-center">Projects</h2>
-			<div id="projects" class="row">
+		<h2 id="projects" class="text-center">Projects</h2>
+			<div class="projects row">
 				<div class="col-xs-12 col-md-4 col-lg-3">
 					<img src="https://www.martinezcreativegroup.com/wp-content/uploads/2014/05/img-placeholder.png">
 				</div>
@@ -68,8 +68,8 @@
 
 <!-- ABOUT ME..................................... -->
 <div class="container-fluid about-bgColor">
-	<div class="container about-me">
-		<h2 id="about-me" class="text-center">About Me</h2>
+	<div class="container about">
+		<h2 id="about" class="text-center">About Me</h2>
 			<div class="row">
 				<div class="col-xs-12 col-lg-1">
 				</div>
@@ -79,7 +79,7 @@
 				<div class="col-xs-12 col-md-8 col-lg-6">
 					<p>Hey! I'm Brandon, a mostly self-taught Front End Web Developer based in Oswego, Illinois. I am currently seeking for a full time position and ready and willing to relocate anywhere I am needed.</p>
 
-					<p>I graduated from Bradley University in August 2015 with a Bachelor's of Science. I majored in Interactive Media with a focus on Game Design (Interactive Media was a combination of Game Design, Web Design, and Animation all in one program, allowing you to choose which one you focus in).</p>
+					<p>I graduated from Bradley University in August 2015 with a Bachelor's of Science. I majored in Interactive Media with a focus in Game Design (Interactive Media was a combination of Game Design, Web Design, and Animation all in one program, allowing you to choose which one you focus in).</p>
 
 					<p>I tried to focus on Game Design, specifically the art side of it(2D Art/Animations, 3D Modeling, etc.), but although I love playing video games, I did not love making them.</p>
 
@@ -95,11 +95,16 @@
 		
 				<ul>
 
-					<li><i class="fa fa-html5" aria-hidden="true"></i></li>
-					<li><i class="fa fa-css3" aria-hidden="true"></i></li>
-					<li><i class="fa fa-wordpress" aria-hidden="true"></i></li>
-					<li><i class="fa fa-github" aria-hidden="true"></i></li>
+					<li class="icons"><i class="fa fa-html5" aria-hidden="true"></i></li>
+					<li class="icons"><i class="fa fa-css3" aria-hidden="true"></i></li>
+					<li class="icons"><i class="fa fa-wordpress" aria-hidden="true"></i></li>
+					<li class="icons"><i class="fa fa-github" aria-hidden="true"></i></li>
 
+				</ul>
+
+				<ul>
+					<li class="liText">JavaScript</li>
+					<li class="liText">jQuery</li>
 				</ul>
 		
 
@@ -109,11 +114,34 @@
 <!-- CONTACT..................................... -->
 <div class="container-fluid contact-bgColor">
 	<div class="container contact">
-		<h2 id="contact" class="text-center">Contact</h2>
+		<h2 id="contact" class="text-center"></h2>
 
-		
+		<ul>
+			<li class="contactText">(630) - 234 - 66613</li>
+			<li class="contactText">brandonstranc@gmail.com</li>
+		</ul>
 
 	</div>
 </div>
+
+<!-- QUOTE GEN..................................... -->
+<div class="container-fluid text-center">
+    <div class="container text-center">
+      <p id="quote"></p>
+      <p id="author"></p>
+      <button id="newQuote" class="btn btn-primary">Get Quote!</button>
+      <button id="shareToTwitter" class="btn btn-primary">Tweet Quote!</button>
+    </div>
+</div>
+
+<!-- WEATHER..................................... -->
+<div class="container-fluid">
+  <div class="container">
+    <h2 class="text-center">Weather</h2>
+    
+    <p class="para"></p>
+  </div>
+</div>
+
 
 </body>
