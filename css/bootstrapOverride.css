@@ -54,8 +54,8 @@ nav a:hover {
 }
 
 /*PROJECTS..........................*/
-.projects {
-
+.projects img {
+	padding: 10px 0;
 }
 
 /*ABOUT ME..........................*/
@@ -72,6 +72,7 @@ nav a:hover {
 	border: solid 5px #1A5163;
 	display: block;
 	margin: 0 auto;
+	margin-bottom: 20px;
 }
 
 .about p {
@@ -106,9 +107,6 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));
 }
 
-
-
-
 ul {
 	text-align: center;
 	margin: 0 auto;
@@ -136,4 +134,11 @@ li {
 
 ul li {
 	list-style: none;
+}
+
+/*MEDIA QUERIES..........................*/
+@media screen and (max-width: 640px) {
+    .container {
+    	width: 85%;
+    }
 }
