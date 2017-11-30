@@ -45,18 +45,65 @@ $(document).ready(function() {
         }
       });
     }
-  getNewQuote();
+	getNewQuote();
   
-  $('#newQuote').on('click', function(e) {
-    e.preventDefault();
-    getNewQuote();
-  });
+	$('#newQuote').on('click', function(e) {
+    	e.preventDefault();
+    	getNewQuote();
+	});
 
-  $('#shareToTwitter').on('click', function(e) {
-  	e.preventDefault();
-  	window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(quote + ' - ' + author));
-  });
+	$('#shareToTwitter').on('click', function(e) {
+  		e.preventDefault();
+  		window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(quote + ' - ' + author));
+	});
 
+
+
+
+	/* WEATHER APP...............................*/
+	var api = "https://fcc-weather-api.glitch.me/api/current?";
+	var lat, lon;
+	var tempUnit = 'C';
+	var currentTemp;
+
+	if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function (position) {
+      var lat = "lat=" + position.coords.latitude;
+      var lon = "lon=" + position.coords.longitude;
+      api = 'https://fcc-weather-api.glitch.me/api/current?' + lon + '&' + lat;
+     
+      getWeather();
+    });
+  } else {
+    console.log("Geolocation is not supported by this browser.");
+  }
+  
+  
+  
+  function getWeather() {
+   $.ajax({
+    url: api, success: function (result) {
+      $("#city").text(result.name + ", ");
+      $("#country").text(result.sys.country);
+      currentTemp = Math.round(result.main.temp);
+      $('#temp').on('click', function() {
+        if (tempUnit == 'C') {
+            currentTemp = Math.round((currentTemp * 9/5) + 32);
+            tempUnit = 'F';
+            console.log(currentTemp);
+            $("#temp").text(currentTemp + String.fromCharCode(176) + tempUnit);
+        } else if (tempUnit == 'F') {
+            currentTemp = Math.round((currentTemp - 32) * 5/9);
+            tempUnit = 'C';
+            console.log(currentTemp);
+            $("#temp").text(currentTemp + String.fromCharCode(176) + tempUnit);
+        }
+      });
+      $("#temp").text(currentTemp + String.fromCharCode(176) + tempUnit);
+      $("#description").text(result.weather[0].main);
+    }
+   });
+  }
 
 
 });
