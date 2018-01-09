@@ -96,8 +96,9 @@ nav a:hover {
 }
 
 .about img {
-	border-radius: 50%;
-	border: solid 5px #1A5163;
+	/*border-radius: 50%;*/
+	/*border: solid 5px #1A5163;*/
+	box-shadow: 5px 5px  5px rgba(0, 0, 0, 0.2);
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 20px;
@@ -136,7 +137,7 @@ ul {
 }
 
 .icons {
-	font-size: 3em;
+	font-size: 2.2em;
 }
 
 li {
@@ -146,7 +147,7 @@ li {
 }
 
 .liText {
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 .contactText {
