@@ -17,16 +17,20 @@ header {
 	background-size: cover;
 	margin: 0 auto;
 	width: 100%;
-	height: auto;
+	height: 100vh;
 }
 
 header h2, header h3, header h4, header a {
 	color: white;
-	text-shadow: 0px 2px  5px black;
+	text-shadow: 2px 2px 10px black;
 }
 
 header .container-fluid {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.75);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #name-heading {
@@ -43,6 +47,7 @@ header h3 {
 	padding-bottom: 150px;
 	font-size: 1em;
 }
+
 header hr {
 	width: 40%;
     height: 1px;
@@ -50,7 +55,7 @@ header hr {
 }
 
 /*NAV..........................*/
-nav {
+/* nav {
 	text-align: right;
 	margin: 0 auto;
 	padding-top: 25px;
@@ -68,10 +73,10 @@ nav a:first-child {
 nav a:hover {
 	color: red;
 	text-decoration: none;
-}
+} */
 
 /*PROJECTS..........................*/
-.projects img {
+/* .projects img {
 	padding: 10px 0;
 }
 
@@ -84,10 +89,10 @@ nav a:hover {
 .projects hr {
 	width: 40%;
     height: 1px;
-}
+} */
 
 /*ABOUT ME..........................*/
-.about-bgColor {
+/* .about-bgColor {
 	background-color: #F7F7F7;
 }
 
@@ -96,8 +101,6 @@ nav a:hover {
 }
 
 .about img {
-	/*border-radius: 50%;*/
-	/*border: solid 5px #1A5163;*/
 	box-shadow: 5px 5px  5px rgba(0, 0, 0, 0.2);
 	display: block;
 	margin: 0 auto;
@@ -106,16 +109,16 @@ nav a:hover {
 
 .about p {
 	padding: 0 10px;
-}
+} */
 
 /*CONTACT..........................*/
-.contact-bgColor {
+/* .contact-bgColor {
 	background-color: #1A5163;
 }
 
 .contact {
 	color: white;
-}
+} */
 
 
 
@@ -125,12 +128,12 @@ h2 {
 }
 
 /*IMAGES..........................*/
-.projects img {
+/* .projects img {
 	width: 100%;
-}
+} */
 
 /*MISC..........................*/
-ul {
+/* ul {
 	text-align: center;
 	margin: 0 auto;
 	padding: 0;
@@ -161,21 +164,14 @@ ul li {
 
 button {
 	margin-bottom: 10px;
-}
+} */
 
 /*WEATHER APP..........................*/
-#temp {
+/* #temp {
   color: red;
   cursor: pointer;
 }
 
 #temp:hover {
   color: maroon;
-}
-
-/*MEDIA QUERIES..........................*/
-/*@media screen and (max-width: 640px) {
-    .container {
-    	width: 85%;
-    }
-}*/
+} */
