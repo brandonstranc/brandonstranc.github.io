@@ -1,0 +1,49 @@
+// Color Scheme
+$primary: #1985D4;
+$secondary: #0F172A;
+
+#about.blockSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .profile {
+    &-image {
+        margin-right: 2rem;
+        flex-basis: 40%;
+        img {
+            width: 250px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+    }
+
+    &-text {
+        flex-basis: 60%;
+        padding: 1.5rem;
+
+        a.button.primary-button {
+            display: inline-block;
+            background: $primary;
+            color: #ffffff;
+            font-size: 1rem;
+            border-radius: 30px;
+            padding: 10px 20px;
+            margin-top: 10px;
+            transition: all ease-in-out 0.3s;
+
+            &:hover {
+                background: darken($primary, 10%);
+            }
+        }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

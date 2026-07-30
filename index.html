@@ -1,134 +1,101 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brandon Stranc | Web Developer</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://kit.fontawesome.com/66ddaefdb1.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      <header>
+        <div class="container-wide">
+          <div class="nav-bar">
+            <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <nav class="site-nav">
+              <button class="menu-close" aria-label="Close navigation">×</button>
+              <a href="#about">About</a>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </header>
 
-<head>
-	<title>Brandon Stranc | Front End Developer</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> <!-- to scale well with mobile -->
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/bootstrapOverride.css">
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <main>
+        <section id="about" class="blockSection container-wide">
+          <div class="profile-image">
+            <img src="images/it-me.jpg" alt="Brandon Stranc" />
+          </div>
+          <div class="profile-text">
+            <h1>Hi, I'm Brandon!</h1>
+            <p>
+              A web developer who enjoys turning ideas into polished,
+              user-friendly products. My work blends strategy, design, and technical execution to create clean code and make things look pretty.
+            </p>
+            <a class="button primary-button" href="/documents/Brandon Stranc - Resume.pdf" target="_blank">Check Out My Resume ></a>
+          </div>
+        </section>
 
-	<!-- <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'> -->
-	
+        <section id="projects" class="projects blockSection">
+          <div class="container-wide">
+            <h2>Some Websites I've Built</h2>
+            <div class="projects__container">
+              <a href="https://www.drivehighway.com/" class="projects__item" target="_blank">
+                <img src="images/drive-highway.jpg" alt="Highway By Hudson" />
+              </a>
+              <a href="https://www.hudsonauto.com/" class="projects__item" target="_blank">
+                <img src="images/hudson-group.jpg" alt="Hudson Group" />
+              </a>
+              <a href="https://www.cochranev.com/" class="projects__item" target="_blank">
+                <img src="images/cochran-ev.jpg" alt="Cochran EV" />
+              </a>
+              <a href="https://www.russdarrow.com/" class="projects__item" target="_blank">
+                <img src="images/russ-darrow.jpg" alt="Russ Darrow Group" />
+              </a>
+            </div>
+          </div>
+        </section>
 
-	<!-- <link rel="stylesheet" type="text/css" href="_css/style.css">
-	<link rel="stylesheet" type="text/css" href="_css/animate.css">
-	
+        <section class="blockSection container-wide">
+          <h2>Skills</h2>
+          <ul>
+            <li>Web Development</li>
+            <li>HTML</li>
+            <li>CSS / SCSS / SASS</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+            <li>Bootstrap</li>
+            <li>Flexbox</li>
+            <li>Wordpress</li>
+            <li>PHP</li>
+            <li>ACF</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Sourcetree</li>
+            <li>Cursor</li>
+            <li>JIRA</li>
+            <li>Confluence</li>
+            <li>Salesforce</li>
+            <li>Figma</li>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>Fresco</li>
+            <li>Sketch</li>
+          </ul>
+        </section>
+      </main>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="_js/script.js"></script> -->
-
-	<link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/bootstrapScript.js"></script>
-</head>
-
-<body>
-<!-- HEADER..................................... -->
-<header>
-	<div class="container-fluid">
-		<div class="container">
-			<!-- <nav>
-				<a href="#projects" class="text-center scrollTo" title="">Projects</a>
-				<a href="#about" class="text-center scrollTo" title="">About Me</a>
-				<a href="#contact" class="text-center scrollTo" title="">Contact</a>
-			</nav> -->
-
-			<h2 id="name-heading" class="text-center fade-in">Brandon Stranc</h2>
-			<h3 class="text-center fade-in">Front End Developer</h3>
-			<hr class="fade-in">
-			<h4 id="h4-padding" class="text-center fade-in">Site Under Construction. Be Back Soon!</h4>
-		</div>
-	</div>
-
-</header>
-
-<!-- PROJECTS..................................... -->
-<!-- <div class="container-fluid">
-	<div class="container projects">
-		<h2 id="projects" class="text-center">Projects</h2>
-
-		<hr>
-
-			<div class="projects row">
-				<div class="col-xs-12 col-md-6 col-lg-6">
-					<h3 class="text-center">Quote Generator</h3>
-						<p id="quote" class="text-center"></p>
-						<p id="author" class="text-center"></p>
-						<div class="text-center">
-							<button id="newQuote" class="btn btn-primary">New Quote!</button>
-							<button id="shareToTwitter" class="btn btn-primary">Tweet Quote!</button>
-						</div>
-				</div>
-				<div class="col-xs-12 col-md-6 col-lg-6">
-					<h3 class="text-center">Weather App</h3>
-						<p class="text-center"><span id="city"></span> <span id="country"></span></p>
-    					<p class="text-center"><span id="temp"></span> <span id="tempUnit"></span></p>
-    					<p id="description" class="text-center"></p>
-				</div>
-				
-			</div>
-	</div>
-</div> -->
-
-<!-- ABOUT ME..................................... -->
-<!-- <div class="container-fluid about-bgColor">
-	<div class="container about">
-		<h2 id="about" class="text-center">About Me</h2>
-			<div class="row">
-				<div class="col-xs-12 col-lg-1">
-				</div>
-				<div class="col-xs-12 col-md-4 col-lg-4">
-					<img src="images/itBeMe2.jpg" alt="Brandons Portrait" height="302" width="200">
-				</div>
-				<div class="col-xs-12 col-md-8 col-lg-6">
-					<p>Hey! I'm Brandon, a Front End Web Developer based in <strong>Oswego, Illinois</strong>. I am currently seeking a full time position and willing to relocate if needed.</p>
-
-            		<p>I graduated from Bradley University with a Bachelor's of Science majoring in Interactive Media, a combination of Web Design, Game Design, and Animation all in one program.</p>
-
-            		<p>Learning about all these different fields gave me a broad knowledge of many different softwares, languages, and just know how of how things are done in the industry. I have continued to learn more about front end development on my own, and work at it almost every day.</p>
-
-            		<p>I'm excited to learn even more and bring everything I have to offer to my soon to be new career. Please take a look at some of the things I have been working on and feel free to contact me via email or phone. Hope to hear from you soon!</p>
-				</div>
-				<div class="col-xs-12 col-lg-1">
-				</div>
-			</div>
-
-			<h2 class="text-center">Skills</h2>
-		
-				<ul>
-
-					<li class="icons"><i class="fa fa-html5" aria-hidden="true"></i></li>
-					<li class="icons"><i class="fa fa-css3" aria-hidden="true"></i></li>
-					<li class="icons"><i class="fa fa-wordpress" aria-hidden="true"></i></li>
-					<li class="icons"><i class="fa fa-github" aria-hidden="true"></i></li>
-
-				</ul>
-
-				<ul>
-					<li class="liText">JavaScript</li>
-					<li class="liText">jQuery</li>
-				</ul>
-		
-
-	</div>
-</div> -->
-
-<!-- CONTACT..................................... -->
-<!-- <div class="container-fluid contact-bgColor">
-	<div class="container contact">
-		<h2 id="contact" class="text-center"></h2>
-
-		<ul>
-			<li class="contactText">(630) - 234 - 66613</li>
-			<li class="contactText">brandonstranc@gmail.com</li>
-		</ul>
-
-	</div>
-</div> -->
-
-</body>
+      <footer id="contact" class="contact blockSection container-wide">
+        <h2>Contact</h2>
+        <a class="button icon-button" href="mailto:brandonstranc@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a class="button icon-button" href="https://www.linkedin.com/in/brandon-stranc/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+.projects {
+  background-image: url("../images/desk-setup-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  background-blend-mode: multiply;
+}
+.projects h2 {
+  color: #ffffff;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.projects__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.projects__item {
+  width: calc(50% - 1rem);
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  transition: all ease-in-out 0.3s;
+  opacity: 1;
+}
+.projects__item img {
+  max-width: 100%;
+  height: auto;
+}
+.projects__item:hover {
+  opacity: 1;
+}
+.projects__container:hover .projects__item:not(:hover) {
+  opacity: 0.3;
+}
+@media (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+  }
+  .projects__item {
+    width: 100%;
+  }
+}/*# sourceMappingURL=projects.css.map */

@@ -1,0 +1,40 @@
+#about.blockSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#about.blockSection .profile-image {
+  margin-right: 2rem;
+  flex-basis: 40%;
+}
+#about.blockSection .profile-image img {
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+#about.blockSection .profile-text {
+  flex-basis: 60%;
+  padding: 1.5rem;
+}
+#about.blockSection .profile-text a.button.primary-button {
+  display: inline-block;
+  background: #1985D4;
+  color: #ffffff;
+  font-size: 1rem;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  transition: all ease-in-out 0.3s;
+}
+#about.blockSection .profile-text a.button.primary-button:hover {
+  background: rgb(19.6202531646, 104.3797468354, 166.3797468354);
+}
+@media (max-width: 768px) {
+  #about.blockSection {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}/*# sourceMappingURL=about.css.map */
